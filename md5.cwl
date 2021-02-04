@@ -15,6 +15,6 @@ outputs:
     outputBinding:
       glob: report
 hints:
-  - dockerPull: aveit/md5:v1
+  - dockerPull: aveit/md5:v2
     class: DockerRequirement
 class: CommandLineTool
