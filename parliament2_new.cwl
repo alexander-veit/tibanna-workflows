@@ -65,6 +65,10 @@ inputs:
     type: string
     inputBinding:
       position: 15
+  sample_name:
+    type: string
+    inputBinding:
+      position: 16
 
 outputs:
   result:
