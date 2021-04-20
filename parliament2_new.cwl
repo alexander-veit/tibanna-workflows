@@ -69,6 +69,10 @@ inputs:
     type: string
     inputBinding:
       position: 16
+  min_qual:
+    type: string
+    inputBinding:
+      position: 17
 
 outputs:
   result:
