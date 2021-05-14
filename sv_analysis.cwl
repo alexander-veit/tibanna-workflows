@@ -75,6 +75,14 @@ outputs:
     type: File
     outputBinding:
       glob: result.zip
+  variants:
+    type: File
+    outputBinding:
+      glob: variants.vcf.gz
+  variantstbi:
+    type: File
+    outputBinding:
+      glob: variants.vcf.gz.tbi
       
 hints:
   - dockerPull: aveit/parliament2
