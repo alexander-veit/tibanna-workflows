@@ -9,66 +9,62 @@ inputs:
     type: File
     inputBinding:
       position: 1
-  illumina_bai:
-    type: File
-    inputBinding:
-      position: 2
+    secondaryFiles:
+      - .bai
   ref_fasta:
     type: File
     inputBinding:
-      position: 3
-  ref_index:
-    type: File
-    inputBinding:
-      position: 4
+      position: 2
+    secondaryFiles:
+      - .fai
   filter_short_contigs:
     type: string
     inputBinding:
-      position: 5
+      position: 3
   run_breakdancer:
     type: string
     inputBinding:
-      position: 6
+      position: 4
   run_breakseq:
     type: string
     inputBinding:
-      position: 7
+      position: 5
   run_manta:
     type: string
     inputBinding:
-      position: 8
+      position: 6
   run_cnvnator:
     type: string
     inputBinding:
-      position: 9
+      position: 7
   run_lumpy:
     type: string
     inputBinding:
-      position: 10
+      position: 8
   run_delly_deletion:
     type: string
     inputBinding:
-      position: 11
+      position: 9
   run_delly_insertion:
     type: string
     inputBinding:
-      position: 12
+      position: 10
   run_delly_inversion:
     type: string
     inputBinding:
-      position: 13
+      position: 11
   run_delly_duplication:
     type: string
     inputBinding:
-      position: 14
+      position: 12
   run_genotype_candidates:
     type: string
     inputBinding:
-      position: 15
+      position: 13
   sample_name:
     type: string
     inputBinding:
-      position: 16
+      position: 14
 
 outputs:
   result:
