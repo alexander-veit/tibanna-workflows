@@ -75,12 +75,10 @@ outputs:
     type: File
     outputBinding:
       glob: variants.vcf.gz
-  variantstbi:
-    type: File
-    outputBinding:
-      glob: variants.vcf.gz.tbi
+    secondaryFiles:
+      - .tbi
       
 hints:
-  - dockerPull: aveit/parliament2
+  - dockerPull: aveit/parliament2:v1
     class: DockerRequirement
 class: CommandLineTool
