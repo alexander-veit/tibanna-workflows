@@ -3,9 +3,19 @@
 cwlVersion: v1.0
 baseCommand:
   - run.sh
-inputs: []
-outputs: []
+inputs:
+  - id: "#gzfile"
+    type:
+      - File
+    inputBinding:
+      position: 1
+outputs:
+  - id: "#report"
+    type:
+    - File
+    outputBinding:
+      glob: report
 hints:
-  - dockerPull: aveit/infinite-loop:v1
+  - dockerPull: aveit/infinite-loop:v2
     class: DockerRequirement
 class: CommandLineTool
